@@ -1,0 +1,73 @@
+.item-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 10px;
+  padding: 50px 20px 20px;
+  border: 2px solid #0074D9;
+  border-radius: 5px;
+}
+
+.popular {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  margin-left: -54px;
+  margin-top: -2em;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background: #0074D9;
+  border-radius: 4px;
+}
+
+.popular::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  border-top-color: #0074D9;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.price > span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title, .content {
+  color: #7f7f7f;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background: #0074D9;
+  opacity: .5;
+}
+.btn-download {
+  margin-top: 15px;
+  min-width: 128px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  .popular {
+    right: 0;
+  }
+}

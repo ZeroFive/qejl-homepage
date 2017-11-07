@@ -1,0 +1,34 @@
+<header>
+  <a class="navber-brand">
+    <img src="assets/logo_ic_launcher.png" alt="logo" class="logo"> 企鹅精灵
+  </a>
+  <nav>
+    <ul [class.is-active]="isBurgerActive">
+      <li>
+        <a href="#home" [class.isActive]="lastEl === 'homeLink'">首页</a>
+      </li>
+      <li>
+        <a href="#introduce" [class.isActive]="lastEl === 'introduceLink'">产品介绍</a>
+      </li>
+      <li>
+        <a href="#appdownload" [class.isActive]="lastEl === 'appdownloadLink'">APP下载</a>
+      </li>
+      <li>
+        <a href="#question" [class.isActive]="lastEl === 'questionLink'">常见问题</a>
+      </li>
+      <li class="is-centered">
+        <a href="#cantact" [class.isActive]="lastEl === 'cantactLink'">联系我们</a>
+      </li>
+      <li>
+        <a target="_blank" href="/user/" class="button is-info is-small link-btn">
+          登录
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="navbar-burger" [class.is-active]="isBurgerActive" (click)="toggleBurger()">
+    <span class="burger"></span>
+    <span class="burger"></span>
+    <span class="burger"></span>
+  </div>
+</header>

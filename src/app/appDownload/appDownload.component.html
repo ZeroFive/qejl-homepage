@@ -1,0 +1,23 @@
+<section id="appdownload">
+  <h2 class="title">APP下载</h2>
+  <div class="line"></div>
+  <h3 class="sub-title">目前已支持安卓平台，IOS正在研发中</h3>
+  <div class="columns is-mobile is-centered p3">
+    <div class="column is-5-mobile is-4-tablet">
+        <div class="ios">
+          <img class="qrCode" src="assets/iphone.jpg" alt="ios-icon">
+          <span class="os-name">IOS系统</span>
+          <span class="notice">敬请期待</span>
+          <a  class="btn-download button is-info" disabled>下载到本地</a>
+      </div>
+    </div>
+    <div class="column is-5-mobile is-4-tablet">
+      <div class="android">
+        <img class="qrCode" src="assets/download.png" alt="qrCode">
+        <span class="os-name">Android系统</span>
+        <span class="notice">手机扫一扫马上下载</span>
+        <a [href]="androidUrl" class="btn-download button is-info" >下载到本地</a>
+      </div>
+    </div>
+  </div>
+</section>

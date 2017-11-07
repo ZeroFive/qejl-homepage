@@ -1,0 +1,10 @@
+<section id="introduce">
+  <h2 class="title">产品介绍</h2>
+  <div class="line"></div>
+  <h3 class="sub-title">企鹅精灵能够让你以超低的价格，体验到极致的服务。</h3>
+  <div class="columns is-multiline is-centered p3">
+    <div class="container column is-half-tablet is-one-third-desktop" *ngFor="let introduce of introduces">
+      <card [introduce]="introduce"></card>
+    </div>
+  </div>
+</section>

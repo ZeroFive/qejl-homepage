@@ -1,0 +1,125 @@
+header {
+  position: fixed;
+  width: 100vw;
+  background: #fff;
+  z-index: 99;
+}
+
+.navber-brand {
+  display: inline-block;
+  line-height: 60px;
+  font-size: 22px;
+}
+
+.navber-brand > img {
+  float: left;
+  margin: 0 10px;
+  margin-top: 8px;
+  height: 45px;
+  width: 45px;
+}
+
+nav {
+  position: absolute;
+  line-height: 60px;
+  right: 0;
+  top: 0;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+.button {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 700px) {
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  li {
+    padding: 0 16px;
+    font-size: 14px;
+  } 
+
+  li > a {
+    display: inline-block;
+    position: relative;
+    transition: all .5;
+  }
+
+  li > a::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(6, 100, 158);
+    transform: scaleX(0);
+    transition: .3s ease-out;
+  }
+
+  li > a:hover, li > a.isActive{
+    color: rgb(6, 100, 158)
+  }
+
+  li > a.isActive::after {
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 700px) { 
+  .navbar-burger {
+    display: block;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul {
+    height: 0;
+    overflow: hidden;
+    transition: 200ms ease-out;
+  }
+
+  ul.is-active {
+    height: 220px;
+  }
+
+  ul.is-active li {
+    display: block;
+    line-height: 40px;
+  }
+
+  ul.is-active li a{
+    display: block;
+    padding: 0 50px;
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+
+  ul.is-active li a.isActive,ul.is-active li a:hover{
+    color: #108ee9;
+    background-color: rgb(230, 245, 230);
+  }
+  
+  nav {
+    top: 100%;
+    width: 100%;
+    background: rgb(247, 245, 245);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  ul.is-active li a.link-btn {
+    display: none
+  } 
+}

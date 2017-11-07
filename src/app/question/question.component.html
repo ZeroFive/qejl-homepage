@@ -1,0 +1,11 @@
+<section id="question">
+    <h2 class="title">常见问题</h2>
+    <div class="line"></div>
+    <h3 class="sub-title">任何问题都可以加入我们的粉丝QQ群453386369咨询，我们将第一时间为你解答。群中每晚红包雨不断，还有海量奖品等你来拿。</h3>
+    <div class="columns is-multiline is-centered p3">
+      <div class="container column is-half-tablet is-one-third-desktop" *ngFor="let question of questions">
+        <card [question]="question"></card>
+      </div>
+    </div>
+  </section>
+  

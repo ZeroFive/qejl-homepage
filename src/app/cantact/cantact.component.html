@@ -1,0 +1,16 @@
+<section id="cantact">
+  <h2 class="title">免费体验+供货赚钱</h2>
+  <div class="line"></div>
+  <h3 class="sub-title">是否已经心动不已？马上加入我们吧！粉丝群：
+    <br>
+    <a [href]="qqUrl" target="_blank">453386369</a>
+  </h3>
+  <div class="columns is-multiline p3">
+    <div class="column is-half-tablet is-one-quarter-desktop" *ngFor="let item of items; let i=index">
+      <item [item]="item" [qqLink]="i === 3"></item>
+    </div>
+  </div>
+  <div class="link-container">
+    <a [href]="qqUrl" target="_blank" class="button is-info qq-link">马上成为供货商</a>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+.card-cantianer {
+  position: relative;
+  margin: 35px 10px;
+  padding-top: 60px;
+  background: #fff;
+}
+
+h3 {
+  color: #444;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  padding: 30px;
+  padding-bottom: 50px;
+  color: #7f7f7f;
+  font-size: 16px;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  left: calc(50% - 42px);
+  top: -42px;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  border-radius: 50%;
+  background: #2fc5cc;
+}
+
+.icon > i {
+  color: #fff;
+  font-size: 40px;
+  line-height: 85px;
+}

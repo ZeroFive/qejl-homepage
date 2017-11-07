@@ -1,0 +1,24 @@
+<div class="m-carousel"
+#carousel
+(mouseenter)="carousel.hover = true"
+(mouseleave)="carousel.hover = false">
+<div class="m-carousel__container" [ngStyle]="{height: height}">
+  <button class="m-carousel__arrow m-carousel__arrow--pre"
+    #preBtn
+    (mouseenter)="btnActionHandle(index - 1)"
+    (click)="btnActionHandle(index - 1)">
+  </button>
+  <button class="m-carousel__arrow m-carousel__arrow--next"
+    #nextBtn
+    (mouseenter)="btnActionHandle(index + 1)"
+    (click)="btnActionHandle(index + 1)">
+  </button>
+  <ng-content></ng-content>
+</div>
+<ul class="m-carousel__indicators">
+  <li *ngFor="let item of children; let i = index"
+    class="m-carousel__indicator"
+    [class.is-active]="i === index">
+  </li>
+</ul>
+</div>

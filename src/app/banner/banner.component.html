@@ -1,0 +1,9 @@
+<m-carousel [childrenNum]="items.length" [height]="'398px'" id="home" style="background: #7f7f7f">
+  <div m-carousel-content *ngFor="let item of items">
+    <div class="flex flex-column items-center cantainer">
+      <p class="h1 center" [@fadeAnimation]="true">{{item.title}}</p>
+      <p class="h4 center" [@fadeAnimation]="true">{{item.subTitle}}</p>
+      <a [href]="androidUrl" class="btn btn-download center text-decoration-none" [@fadeAnimation]="true">{{item.label}}</a>
+    </div>
+  </div>
+</m-carousel>

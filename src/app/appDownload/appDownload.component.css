@@ -1,0 +1,57 @@
+section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #fbfbfb;
+}
+
+.title, .sub-title {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: #444;
+}
+
+.sub-title {
+  margin: 17px 0;
+  margin-bottom: 60px;
+  font-size: 23px;
+  color: #929292;
+}
+
+.ios, .android {
+  display: flex;
+  align-items: center;
+  flex-direction:  column;
+}
+
+.qrCode {
+  width: 140px;
+  height: 140px;
+}
+
+.os-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.notice {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #c3c3c3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-download {
+  line-height: 32px;
+  letter-spacing: 2px;
+}

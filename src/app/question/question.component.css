@@ -1,0 +1,26 @@
+section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #001f3f;
+}
+
+.title, .sub-title {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.sub-title {
+  margin: 17px 0;
+  margin-bottom: 60px;
+  padding: 0 18%;
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.5);
+}

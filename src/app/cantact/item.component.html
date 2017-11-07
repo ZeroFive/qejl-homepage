@@ -1,0 +1,8 @@
+<div class="item-container">
+  <div class="popular">企鹅精灵，期待你的加入</div>
+  <div class="price">{{item.number}} <span>{{item.unit}}</span></div>
+  <p class="title">{{item.title}}</p>
+  <div class="line"></div>
+  <p class="content">{{item.content}}</p>
+  <a [href]="qqLink ? qqUrl: androidUrl" class="btn-download button is-info">{{qqLink ?  '立即加入' : '立即下载APP'}}</a>
+</div>

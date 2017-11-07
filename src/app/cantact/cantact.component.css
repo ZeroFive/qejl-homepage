@@ -1,0 +1,44 @@
+section {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background: #f4f4f4;
+}
+
+.title, .sub-title {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: #444;
+}
+
+.sub-title {
+  margin: 17px 0;
+  margin-bottom: 60px;
+  font-size: 23px;
+  color: #929292;
+}
+
+.sub-title > a {
+  color: #6173f4;
+  text-decoration: none;
+}
+
+.link-container {
+  position: relative;
+  top: -20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.qq-link {
+  min-width: 180px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}

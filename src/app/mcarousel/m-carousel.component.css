@@ -1,0 +1,94 @@
+.m-carousel {
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.m-carousel__container {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  background-color: #777777;
+}
+
+:host ::ng-deep .m-carousel__item {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+:host ::ng-deep .m-carousel__item.is-animating {
+  transition: transform .4s;
+}
+
+:host ::ng-deep .m-carousel__item.is-active {
+  z-index: 2;
+}
+
+.m-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  margin: 0;
+  height: 36px;
+  width: 36px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  cursor: pointer;
+  background-color: rgba(32, 33, 34, 0.11);
+  border: none;
+  outline: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.m-carousel__arrow--pre {
+  left: 16px;
+}
+
+
+.m-carousel__arrow--next {
+  right: 16px;
+}
+
+.m-carousel__item {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.m-carousel__indicators {
+  position: absolute;
+  list-style: none;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.m-carousel__indicator {
+    display: inline-block;
+    margin: 0 2px;
+    width: 16px; 
+    height: 3px;
+    opacity: .48;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.m-carousel__indicator.is-active {
+  opacity: 1;
+  width: 24px;
+}
